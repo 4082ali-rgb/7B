@@ -1,11 +1,8 @@
 name: Docker
 
+# Publishing to ghcr.io is manual-only in this copy; run it from the Actions tab.
 on:
-  push:
-    branches: [main]
-    tags: ['v*.*.*']
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read

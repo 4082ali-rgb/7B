@@ -32,13 +32,9 @@ name: CLI release
 # Requires npm >= 11.5.1 and Node >= 22.14.0 for OIDC, hence Node 24 below
 # (still inside the repo's engines range of >=20.18 <25).
 
+# Publishing to npm is manual-only in this copy; run it from the Actions tab.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'cli/**'
-      - '.github/workflows/cli-release.yml'
 
 permissions:
   contents: read
